@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Past Simple Tense</title>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="css\fontello.css" type="text/css">
+
+</head>
+
+<body style="padding: 0px; margin: 0px;">
+<script>
+//I visited Spain last year
+  //I went to school to see my teacher
+//I won yesterday’s tournament
+//I bought a new car last week
+//She baked some cookies last Saturday
+//Kate watched good comedy yesterday
+  function pobierz() {
+    let points=parseInt(0);
+    let odp1=document.getElementById('zad1').value;
+    let odp2=document.getElementById('zad2').value;
+    let odp3=document.getElementById('zad3').value;
+    let odp4=document.getElementById('zad4').value;
+    let odp5=document.getElementById('zad5').value;
+    let odp6=document.getElementById('zad6').value;
+    if(odp1==="I visited Spain last year"){
+      document.querySelector("#check1").innerHTML="Correct!"
+    points++;
+  }
+  else{
+    document.querySelector("#check1").innnerHTML="Incorrect!";
+  }
+    //-------------------------------------------------------
+    if(odp2==="I went to school to see my teacher"){
+      points++;
+      document.querySelector("#check2").innerHTML="Correct!"
+    }else{
+      document.querySelector("#check2").innerHTML="Incorrect";
+    }
+      //-------------------------------------------------------
+    if(odp3==="I won yesterday’s tournament"){
+      points++;
+      document.querySelector("#check3").innerHTML="Correct";
+    }else{
+      document.querySelector("#check3").innerHTML="Incorrect";
+    }
+      //-------------------------------------------------------
+    if(odp4==="I bought a new car last week"){
+      points++;
+      document.querySelector("#check4").innerHTML="Correct";
+    }else{
+      document.querySelector("#check4").innerHTML="Incorrect";
+    }
+      //-------------------------------------------------------
+    if(odp5==="She baked some cookies last Saturday"){
+      points++;
+      document.querySelector("#check5").innerHTML="Correct";
+    }else{
+      document.querySelector("#check5").innerHTML="Incorrect";
+    }
+      //-------------------------------------------------------
+    if(odp6==="Kate watched good comedy yesterday"){
+      points++;
+      document.querySelector("#check6").innerHTML="Correct";
+    }else{
+      document.querySelector("#check6").innerHTML="Incorrect";
+    }
+
+
+    document.querySelector("#wynik").innerHTML="Your points: "+points+". Congratulation!";
+  }
+</script>
+  <header id="baner" style="text-align:center;">
+    <div clas="word_past"><--------------Past Simple Tense Site--------------></div>
+  </header>
+<!--_______________________________________________________________________________________________________________________-->
+<nav id="lewo" style="padding:9px;">
+<ul>
+<li class="nav_topics"><h4 ><a href="index.html">Past Simple Tense |</a></h4></li>                                      <!--czas past simple -->
+<li class="nav_topics"><h4><a href="build.html"><h4 style="padding-bottom:5px;">Construction of time |</h4></a></li>                                  <!--budowa czasu-->
+<li class="nav_topics"><h4><a href="druga_forma.html">Second form of the verb |</a></h4></li>                              <!--druga forma czasownika -->
+<li class="nav_topics"><h4><a href="did.html"> "Did" operator |</a></h4></li>                                       <!--operator did-->
+<li class="nav_topics"><h4><a href="negative.html">Negative Sentences |</a></h4></li>                                     <!--zdania przeczace-->
+<li class="nav_topics"><h4><a href="pytania.html">Interrogative sentences |</a></h4></li>                              <!--zdania pytajace-->
+<li class="nav_topics"><h4><a href="okreslanieczasu.html">Time determination |</a></h4></li>
+<li class="nav_topics"><h4><a href="used to.html">Construction used to |</a></h4></li>                                    <!--okreslanie czasu-->
+<li class="nav_topics"><h4><a href="kiedy uzywamy.html">When do we use the past simple past tense? |</a></h4></li>      <!--kiedy uzywamy-->
+<li class="nav_test"><h4><a href="pytania.html">Test </a></h4></li>
+</ul>
+</nav>
+<!--_______________________________________________________________________________________________________________________-->
+
+
+
+<!--_______________________________________________________________________________________________________________________-->
+<article id="średek">
+<h1 style="margin:50px;">Test:</h1>
+<div style="margin:50px;">
+<!------------------------------------------------------------------------------------------------------------------>
+<h2>Combine the words and inflect them to form a grammatically correct sentence:</h2></br>
+
+<form id="test" >
+      visit/I/Spain/year/last</br><div id="check1"></div>
+      <input type="text" id="zad1"/>
+      <!--I visited Spain last year.-->
+
+      </br>go/to/to/see/my/I/school/teachers</br>
+      <input type="text" id="zad2"/><div id="check2"></div>
+      <!--I went to school to see my teachers-->
+
+      </br>win/yesterda's/tournament/I</br>
+      <input type="text" id="zad3"/><div id="check3"></div>
+      <!--I won yesterday’s tournament-->
+
+      </br>buy/a new/last/car/week/I</br>
+      <input type="text" id="zad4"/><div id="check4"></div>
+      <!--I bought a new car last week-->
+
+      </br>bake/some/she/Saturday/cookies/last/</br>
+      <input type="text" id="zad5"/><div id="check5"></div>
+     <!--She baked some cookies last Saturday-->
+
+      </br>watch/Kate/comedy/yesterday/good</br>
+      <input type="text" id="zad6"/><div id="check6"></div>
+      <!--Kate watched good comedy yesterday-->
+    </br></br>
+    <div id="wynik"></div>
+    </br></br>
+      <button class="button_test" type="button" onclick="pobierz()">
+        <i class="icon-ok" style="text-decoration:none;"></i>
+      </button>
+
+</form>
+<!------------------------------------------>
+</div>
+</article>
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+<footer id="stopka">
+  <div>All rights reserved &copy</div>
+</footer>
+
+</body>
+</html>
